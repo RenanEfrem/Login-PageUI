@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
 :root {
-    --background-light: #FFEAECC;
+    --background-light: #f5f7f9;
+    --background-light-form: #ffffff;
+    --black: black;
+    --blue: #0099ff;
 }
 html {
     overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
 * {
     padding:0;
@@ -14,6 +20,20 @@ html {
 body {
     background-color: var(--background-light);
 }
+.login-form {
+    position: absolute;
+    left: 70%;
+    transform: translate(-50%); 
+    background-color: var(--background-light-form);
+    height: 70%;
+    width: 50vw;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .waves {
     width: 100%;
     position: absolute;
@@ -24,10 +44,42 @@ body {
     animation: wave-animation 3s ease-in-out infinite alternate;
 }
 .wave-2 {
-    animation: wave-animation 3s ease-in-out infinite alternate;
+    animation: wave-animation 2s ease-out infinite alternate;
 }
 @keyframes wave-animation {
     from {
         transform: translateX(-200px);
     }
+}
+h1 {
+    font-weight: 600;
+}
+h3{
+    font-weight: 400;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form input[type="text"] {
+    margin-top: 40px;
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid var(--black);
+}
+form input[type="password"] {
+    margin-top: 20px;
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid var(--black);
+}
+form button[type="submit"] {
+    margin-top: 30px;
+    height: 60px;
+    background-color: var(--blue);
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
 }
