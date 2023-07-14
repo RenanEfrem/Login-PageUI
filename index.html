@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">[
     <link rel="stylesheet" href="styles/global.css">
+    <script src="https://kit.fontawesome.com/32af904b60.js" crossorigin="anonymous"></script>
     <title>Login Page UI - AyeSoftware</title>
 </head>
 <body>
@@ -12,14 +13,17 @@
         
     </header>
     <section>
-        <div class="login-form">
-            <h1>Welcome Back!</h1>
-            <h3>Enter your credentials to access your account</h3>
-           <form>
-                <input type="text" placeholder="E-mail"> 
-                <input type="password" placeholder="Password"> 
-                <button type="submit">Login</button>
-           </form>
+        <div class="login-area">
+            <div class="header-form">
+                <label class="text-normal">Welcome to <a class="title">AyeSoftware</a></label>
+                <label class="signin">Sign In</label>
+                <label class="noaccount">No account? <br><a class="signup">Signup</a><br></label>
+            </div>
+            <div class="login-methods">
+                <div class="google-login"><img width="42" height="42" src="https://img.icons8.com/fluency/48/google-logo.png" alt="google-logo"/>Sign in with Google </div>
+                <div class="other-login"><img width="48" height="48" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/></div>
+                <div class="other-login"><img width="48" height="48" src="https://img.icons8.com/fluency/48/github.png" alt="github"/></div>
+            </div>
         </div>
     </section>
     <footer>
