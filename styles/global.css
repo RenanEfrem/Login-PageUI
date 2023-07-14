@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap');
+@-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
 
-:root {
-    --background-light: #f5f7f9;
+ :root {
+    --background-light: #E7EDED;
     --background-light-form: #ffffff;
     --black: black;
     --blue: #0099ff;
+    --red: #A51C30;
 }
 html {
     overflow-x: hidden;
@@ -23,6 +25,14 @@ body {
     flex-direction: row;
     background-color: var(--background-light);
 }
+.spectrum { 
+    position: absolute;
+    height: 600px;
+    width: 700px;
+    top: 5vh;
+    left: 20vh;
+}
+
 .login-area {
     display: none;
     position: absolute;
@@ -30,7 +40,7 @@ body {
     margin-top: 5vh;
     background-color: var(--background-light-form);
     height: 70%;
-    width: 35vw;
+    width: 35%;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     display: flex;
@@ -87,7 +97,14 @@ body {
     margin-left: 10px;
     cursor: pointer;
 }
-
+.ia {
+    font-weight: bold;
+    -webkit-animation:tracking-in-expand 3s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand 3s cubic-bezier(.215,.61,.355,1.000) both;
+    font-size: 4em;
+    color: var(--background-light);
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: var(--blue)
+}
 .other-login {
     display: flex;
     justify-content: center;
@@ -104,7 +121,7 @@ body {
     background-color: #c8dcfc;
 }
 .text-normal {
-    font-size: 1vw;
+    font-size: 1.2vw;
     font-weight: 400;
     margin-left: 3vw;
     margin-top: 3vh;
@@ -130,7 +147,7 @@ body {
 .waves {
     width: 100%;
     position: absolute;
-    bottom: -10vh;
+    bottom: -15vh;
     transform: scaleX(1.4);
 }
 .wave-1 {
@@ -165,6 +182,7 @@ body {
 label {
     margin-top: 5px;
     margin-left: 3vw;
+    font-size: 1.7vh;
 }
 input[type="email"] {
     margin-top: 20px;
@@ -184,24 +202,31 @@ input[type="password"] {
     padding: 20px;
     border: 1px solid var(--blue);
 }
-input[type="email"]:hover ~ label, input[type="email"]:focus ~ label{
+input[type="email"]:valid ~ label, input[type="email"]:focus ~ label{
     transform: translate(0px, -25px);
     background-color: var(--background-light-form);
     color: var(--blue);
     transition: 1s;
     transition-timing-function: ease-out;
 }
-input[type="password"]:hover ~ label, input[type="password"]:focus ~ label{
+input[type="password"]:valid ~ label, input[type="password"]:focus ~ label{
     transform: translate(0px, -25px);
     background-color: var(--background-light-form);
     color: var(--blue);
     transition: 1s;
     transition-timing-function: ease-out;
+}
+input[type="password"]:invalid {
+    color: var(--red);
+}
+input[type="email"]:invalid {
+    color: var(--red);
 }
 .content-input {
     position: absolute;
     pointer-events: none;
-    margin-left: 20px;
+    margin-left: 10px;
+    font-size: 1.5vh;
     color: grey;
 }
 .login {
@@ -214,6 +239,7 @@ input[type="password"]:hover ~ label, input[type="password"]:focus ~ label{
     font-weight: 600;
     font-size: 0.9vw;
     transition: 0.5s;
+    cursor: pointer;
 }
 .login:hover {
     background-color: #037fd8;
@@ -234,4 +260,5 @@ input[type="password"]:hover ~ label, input[type="password"]:focus ~ label{
     width: 92%;
     display: flex;
     justify-content: center;
+    
 }
