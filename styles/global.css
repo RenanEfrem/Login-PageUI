@@ -32,7 +32,15 @@ body {
     top: 5vh;
     left: 20vh;
 }
-
+.floor {
+    height: 60vh;
+    width: 30vw;
+    background-color: #0370be;
+    position: absolute;
+    left: 0;
+    border-radius: 4px;
+    top: 66vh;
+}
 .login-area {
     display: none;
     position: absolute;
