@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">[
     <link rel="stylesheet" href="styles/global.css">
     <script src="https://kit.fontawesome.com/32af904b60.js" crossorigin="anonymous"></script>
+    
     <title>Login Page UI - AyeSoftware</title>
 </head>
 <body>
     <header>
-        
-        
+      
     </header>
     <section>
         <div class="login-area">
@@ -20,10 +20,29 @@
                 <label class="noaccount">No account? <br><a class="signup">Signup</a><br></label>
             </div>
             <div class="login-methods">
-                <div class="google-login"><img width="42" height="42" src="https://img.icons8.com/fluency/48/google-logo.png" alt="google-logo"/>Sign in with Google </div>
+                <div class="google-login"><img width="48" height="48" src="https://img.icons8.com/fluency/48/google-logo.png" alt="google-logo"/><label class="signin-Google">Sign in with Google</label></div>
                 <div class="other-login"><img width="48" height="48" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/></div>
                 <div class="other-login"><img width="48" height="48" src="https://img.icons8.com/fluency/48/github.png" alt="github"/></div>
             </div>
+            <form class="login-form" action="">
+                <label>Enter your email address</label>
+                <div class="email">
+                    <input type="email" required name="" id="">
+                    <label class="content-input">email address</label>
+                </div>
+                <label>Enter your password</label>
+                <div class="password">
+                    <input type="password" required name="" id="">
+                    <label class="content-input">Password</label>
+                </div>
+                <div class="forgot-password">
+                    <a class="forgot">Forgot your password?</a>
+                </div>
+                <div class="submit">
+                    <input class="login" type="button" value="Sign In">
+                </div>
+                
+            </form>
         </div>
     </section>
     <footer>
