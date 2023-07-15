@@ -8,12 +8,34 @@
 </head>
 <body>
     <header>
-        <div class="spectrum">
-           <div class="ia">I.A IS THE FUTURE</div>
+        <div class="container">
            <iframe style="border: none" width="600" height="600" src="https://rive.app/s/ARaH7KxNaEm7eq5qw8y9Wg/embed" allowfullscreen></iframe>
         </div>
     </header>
     <section>
+        <div class="modal" id="modal">
+            <div class="chat-header">
+                <img width="80" height="80" src="https://img.icons8.com/3d-fluency/94/robot-1.png" alt="robot-1"/>
+                <label class="bot-header">Bot Assistant</label>
+                <div class="close" id="close-modal-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256"
+                    style="fill:#000000;">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M7.71875,6.28125l-1.4375,1.4375l17.28125,17.28125l-17.28125,17.28125l1.4375,1.4375l17.28125,-17.28125l17.28125,17.28125l1.4375,-1.4375l-17.28125,-17.28125l17.28125,-17.28125l-1.4375,-1.4375l-17.28125,17.28125z"></path></g></g>
+                    </svg>
+                </div>
+            </div>
+            <div class="chat-body">
+                <div class="message"><img width="28" height="28" src="https://img.icons8.com/stickers/100/chatbot.png" alt="chatbot"/><p class="text-messageRobot">What is your question?</p></div>
+                <div class="me-message"><p class="text-message">You are a robot?</p></div>
+                <div class="message"><img width="28" height="28" src="https://img.icons8.com/stickers/100/chatbot.png" alt="chatbot"/><p class="text-messageRobot">Yes, I am</p></div>
+                <div class="message"><img width="28" height="28" src="https://img.icons8.com/stickers/100/chatbot.png" alt="chatbot"/><p class="text-messageRobot">one more question?</p></div>
+            </div>
+            <div class="input">
+                <input type="text" id="textinput" class="text-input" placeholder="Write your question" autofocus />
+                <img width="38" height="38" src="https://img.icons8.com/fluency/48/arrow.png" alt="arrow" class="send-message"/>
+            </div>
+            
+        </div>
         <div class="login-area">
             <div class="header-form">
                 <label class="text-normal">Welcome to <a class="title">OpenMinds A.I</a></label>
@@ -42,8 +64,12 @@
                 <div class="submit">
                     <input class="login" type="button" value="Sign In">
                 </div>
-                
             </form>
+        </div>
+        <div class="chat-container" id="chat-area">
+            <div class="container-chat" id="chat-button">
+                <img width="90" height="90" src="https://img.icons8.com/3d-fluency/94/chatbot.png" alt="chatbot"/>
+            </div>
         </div>
     </section>
     <footer>
@@ -54,6 +80,6 @@
             </svg>
         </div>
     </footer>
-
-</body>
+    <script src="./js/modal.js"></script>
+</body> 
 </html>
