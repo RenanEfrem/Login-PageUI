@@ -32,15 +32,7 @@ body {
     top: 5vh;
     left: 20vh;
 }
-.floor {
-    height: 60vh;
-    width: 30vw;
-    background-color: #0370be;
-    position: absolute;
-    left: 0;
-    border-radius: 4px;
-    top: 66vh;
-}
+
 .login-area {
     display: none;
     position: absolute;
@@ -91,7 +83,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 60px;
-    width: 40vh;
+    width: 20vw;
     border-radius: 10px;
     background-color: #b8d4ff;
     color: var(--blue);
@@ -190,7 +182,7 @@ body {
 label {
     margin-top: 5px;
     margin-left: 3vw;
-    font-size: 1.7vh;
+    font-size: 1.6vh;
 }
 input[type="email"] {
     margin-top: 20px;
@@ -265,8 +257,78 @@ input[type="email"]:invalid {
     cursor: pointer;
 }
 .submit {
-    width: 92%;
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     
+}
+@media only screen and (max-width: 1200px) {
+    .waves {
+        display: none;
+    }
+    iframe {
+        display: none;
+    }
+    .ia {
+        display: none;
+    }
+    .login-area {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+    }
+    .login {
+        font-size: 14px;
+        width: 250px;
+        height: 80px;
+    }
+    .forgot {
+        font-size: 12px;
+    }
+    label {
+        font-size: 13px;
+    }
+    .text-normal {
+        font-size: 14px;
+    }
+    .signin {
+        font-size: 12px;
+    }
+    .noaccount {
+        font-size: 11px;
+    }
+    .google-login {
+        border-radius: 10px;
+        height: 50px;
+        width: 60px;
+        background-color: #dde7f7;
+    }
+    .signin-Google {
+        display: none;
+    }
+}
+@media only screen and (max-width: 896px) {
+    .login-area {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 85%;
+    }
+    .waves {
+        display: none;
+    }
+}
+@media only screen and (max-width: 740px) {
+    .login-area {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 80%;
+        width: 90%;
+    }
+    .waves {
+        display: none;
+    }
 }
