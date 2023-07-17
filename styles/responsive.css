@@ -8,7 +8,6 @@
   --aqua-blue: #4bb3f8;
   --red: #a51c30;
 }
-
 @media only screen and (max-width: 1200px) {
   .login-form {
     margin-top: 20vh;
