@@ -229,7 +229,8 @@ input[type="email"] {
   padding: 20px;
   border: 1px solid var(--blue);
 }
-input[type="text"] {
+
+.username-input {
   margin-top: 20px;
   height: 10px;
   width: 85%;
@@ -237,6 +238,15 @@ input[type="text"] {
   outline: none;
   padding: 20px;
   border: 1px solid var(--blue);
+}
+.input-chatbot {
+  margin-top: 20px;
+  height: 10px;
+  width: 85%;
+  border-radius: 10px;
+  outline: none;
+  padding: 20px;
+  background-color: var(--background-light);
 }
 input[type="password"] {
   margin-top: 20px;
@@ -406,7 +416,7 @@ input[type="email"]:invalid {
 .input {
   width: 95%;
   margin-top: 10px;
-  height: 40px;
+  height: 35px;
   border-radius: 5px;
   background-color: var(--background-light);
   border-bottom: 1px solid var(--blue);
