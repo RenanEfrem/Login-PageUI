@@ -13,6 +13,9 @@
     .login-form {
       margin-top: 20vh;
     }
+    .register-form {
+      margin-top: 20vh;
+    }
     .waves {
       display: none;
     }
@@ -28,7 +31,18 @@
       transform: translate(-50%, -50%);
       width: 50%;
     }
+    .register-area {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 50%;
+    }
     .login {
+      font-size: 14px;
+      width: 250px;
+      height: 80px;
+    }
+    .register {
       font-size: 14px;
       width: 250px;
       height: 80px;
@@ -44,6 +58,9 @@
     }
     .signin {
       font-size: 12px;
+    }
+    .account {
+      font-size: 11px;
     }
     .noaccount {
       font-size: 11px;
@@ -69,7 +86,16 @@
       transform: translate(-50%, -50%);
       width: 85%;
     }
+    .register-area {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 85%;
+    }
     .login-form {
+      margin-top: 20vh;
+    }
+    .register-form {
       margin-top: 20vh;
     }
     .waves {
@@ -101,7 +127,14 @@
       height: 80%;
       width: 90%;
     }
-    .login-form {
+    .register-area {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 80%;
+      width: 90%;
+    }
+    .register-form {
       margin-top: 20vh;
     }
     .waves {
@@ -123,6 +156,9 @@
   }
   @media only screen and (max-width: 374) {
     .login-form {
+      margin-top: 20vh;
+    }
+    .register-form {
       margin-top: 20vh;
     }
   }

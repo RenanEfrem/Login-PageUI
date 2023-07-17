@@ -45,6 +45,25 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: visibility 0.2s linear, opacity 0.2s linear;
+}
+.register-area {
+  display: none;
+  position: absolute;
+  right: 5vw;
+  margin-top: 5vh;
+  background-color: var(--white);
+  height: 70%;
+  width: 35%;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.2s linear, opacity 0.2s linear;
 }
 .header-form {
   position: absolute;
@@ -57,6 +76,17 @@ body {
   align-items: center;
 }
 .login-methods {
+  position: fixed;
+  margin-top: 1vh;
+  height: 80px;
+  width: 100%;
+  top: 15vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.register-methods {
   position: fixed;
   margin-top: 1vh;
   height: 80px;
@@ -118,12 +148,21 @@ body {
   margin-right: 2vw;
   margin-top: 2vh;
 }
+.account {
+  font-size: 0.7vw;
+  font-weight: 400;
+  margin-right: 2vw;
+  margin-top: 2vh;
+}
 .signup {
   font-weight: bold;
   cursor: pointer;
   color: var(--blue);
 }
 .email-input {
+  right: 30vw;
+}
+.username-input {
   right: 30vw;
 }
 .waves {
@@ -145,6 +184,12 @@ body {
   width: 100%;
   margin-top: 10vh;
 }
+.register-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10vh;
+}
 .email {
   display: flex;
   flex-direction: column;
@@ -152,6 +197,20 @@ body {
   margin-left: 3vw;
 }
 .password {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 3vw;
+}
+.checkbox {
+  width: 92%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+  margin-bottom: 5vh;
+  
+}
+.username {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -171,6 +230,15 @@ input[type="email"] {
   padding: 20px;
   border: 1px solid var(--blue);
 }
+input[type="text"] {
+  margin-top: 20px;
+  height: 10px;
+  width: 85%;
+  border-radius: 10px;
+  outline: none;
+  padding: 20px;
+  border: 1px solid var(--blue);
+}
 input[type="password"] {
   margin-top: 20px;
   height: 10px;
@@ -182,6 +250,14 @@ input[type="password"] {
 }
 input[type="email"]:valid ~ label,
 input[type="email"]:focus ~ label {
+  transform: translate(0px, -25px);
+  background-color: var(--background-light-form);
+  color: var(--blue);
+  transition: 1s;
+  transition-timing-function: ease-out;
+}
+input[type="text"]:valid ~ label,
+input[type="text"]:focus ~ label {
   transform: translate(0px, -25px);
   background-color: var(--background-light-form);
   color: var(--blue);
@@ -220,8 +296,22 @@ input[type="email"]:invalid {
   font-size: 0.9vw;
   transition: 0.5s;
   cursor: pointer;
+  margin-top: 20px;
 }
-.login:hover {
+.register {
+  width: 20vw;
+  height: 70px;
+  background-color: var(--blue);
+  font-family: "Poppins", sans;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9vw;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.register:hover {
   background-color: var(--dark-blue);
 }
 .forgot {

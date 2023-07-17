@@ -18,7 +18,14 @@
             <div class="alert-contents">
                 <img width="54" height="54" src="https://img.icons8.com/fluency/48/checkmark-blue.png" alt="checkmark-blue"/>
                 <label id="result" class="result-text">Login successful</label>
-                <label id="more-result" class="more-text">You have successful signin into your account</label>
+                <label id="more-result" class="more-text">You have successful signin into your account!</label>
+            </div>
+        </div>
+        <div id="alert-modal-register" class="alert">
+            <div class="alert-contents">
+                <img width="54" height="54" src="https://img.icons8.com/fluency/48/checkmark-blue.png" alt="checkmark-blue"/>
+                <label id="result" class="result-text">Register successful</label>
+                <label id="more-result" class="more-text">You have successful register your account!</label>
             </div>
         </div>
         <div class="modal" id="modal">
@@ -32,6 +39,7 @@
                     </svg>
                 </div>
             </div>
+
             <div class="chat-body">
                 <div class="message">
                     <img width="28" height="28" src="https://img.icons8.com/stickers/100/chatbot.png" alt="chatbot"/>
@@ -53,12 +61,11 @@
                 <input type="text" id="textinput" class="text-input" placeholder="Write your question" autofocus />
                 <img width="38" height="38" src="https://img.icons8.com/fluency/48/arrow.png" alt="arrow" class="send-message"/>
             </div>
-            
         </div>
-        <div class="login-area">
+        <div id="login-page" class="login-area">
             <div class="header-form">
                 <label class="text-normal">Welcome to <a class="title">OpenMinds A.I</a></label>
-                <label class="noaccount">No account? <br><a class="signup">Signup</a><br></label>
+                <label class="noaccount">No account? <br><a class="signup" onclick="SignChange()">Sign up</a><br></label>
             </div>
             <div class="login-methods">
                 <div class="google-login">
@@ -70,7 +77,7 @@
                 </div>
                 <div class="other-login"><img width="48" height="48" src="https://img.icons8.com/fluency/48/github.png" alt="github"/></div>
             </div>
-            <form id="login-form" onsubmit="validateForm()" oninvalid="InvalidForm()" class="login-form" action="">
+            <form id="login-form" onsubmit="validateFormLogin()" class="login-form" action="">
                 <label>Enter your email address</label>
                 <div class="email">
                     <input id="email" style="caret-color: #0099ff;" type="email" required>
@@ -86,6 +93,42 @@
                 </div>
                 <div class="submit">
                     <input  type="submit" class="login" type="button" value="Sign In">
+                </div>
+            </form>
+        </div>
+        <div id="register-page" class="register-area">
+            <div class="header-form">
+                <label class="text-normal">Welcome to <a class="title">OpenMinds A.I</a></label>
+                <label class="account">You have a account? <br><a class="signup" onclick="SignChange()">Sign in</a><br></label>
+            </div>
+            <div class="register-methods">
+                <div class="google-login">
+                    <img width="48" height="48" src="https://img.icons8.com/fluency/48/google-logo.png" alt="google-logo"/>
+                    <label class="signin-Google">Sign up with Google</label>
+                </div>
+                <div class="other-login">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/>
+                </div>
+                <div class="other-login"><img width="48" height="48" src="https://img.icons8.com/fluency/48/github.png" alt="github"/></div>
+            </div>
+            <form id="register-form" onsubmit="validateFormRegister()" class="register-form" action="">
+                <label>Enter your username</label>
+                <div class="username">
+                    <input id="username" type="text" style="caret-color: #0099ff;" required>
+                    <label class="content-input">Username</label>
+                </div>
+                <label>Enter your email address</label>
+                <div class="email">
+                    <input id="email" style="caret-color: #0099ff;" type="email" required>
+                    <label class="content-input">email address</label>
+                </div>
+                <label>Enter your password</label>
+                <div class="password">
+                    <input id="password" style="caret-color: #0099ff;" type="password" required>
+                    <label class="content-input">Password</label>
+                </div>
+                <div class="submit">
+                    <input  type="submit" class="register" type="button" value="Sign Up">
                 </div>
             </form>
         </div>
@@ -105,5 +148,6 @@
     </footer>
     <script src="./js/modal.js"></script>
     <script src="./js/form.js"></script>
+    <script src="./js/sign.js"></script>
 </body> 
 </html>
