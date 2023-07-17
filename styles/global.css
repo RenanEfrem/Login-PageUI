@@ -264,8 +264,8 @@ input[type="email"]:focus ~ label {
   transition: 1s;
   transition-timing-function: ease-out;
 }
-input[type="text"]:valid ~ label,
-input[type="text"]:focus ~ label {
+.username-input:valid~ label,
+.username-input:focus ~ label {
   transform: translate(0px, -25px);
   background-color: var(--background-light-form);
   color: var(--blue);
