@@ -8,7 +8,6 @@ form.addEventListener('submit', e => {
     e.preventDefault()
 })
 function validateForm() {
-    console.log("validou")
     alertModal.style.opacity = 1;
     alertModal.style.visibility = 'visible';
     setTimeout(() => {

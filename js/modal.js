@@ -11,14 +11,14 @@ closeModalButton.onclick = function() {
 }
 
 const modalHandler = () => {
-    if(modalOpened == false) {
-        modal.style.visibility = "visible";
-        modal.style.opacity = '1';
-        modalOpened = true;
-        return;
-    }else {
-        modalOpened = false;
+    if(modalOpened) {
         modal.style.visibility = "hidden";
         modal.style.opacity = '0';
+        modalOpened = false;
+        return;
+    }else {
+        modalOpened = true;
+        modal.style.visibility = "visible";
+        modal.style.opacity = '1';
     }
 }
