@@ -1,153 +1,334 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/responsive.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
     <title>Login Page UI</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="container">
-           <iframe style="border: none" width="600" height="600" src="https://rive.app/s/ARaH7KxNaEm7eq5qw8y9Wg/embed" allowfullscreen></iframe>
-        </div>
+      <div class="container">
+        <iframe
+          style="border: none"
+          width="600"
+          height="600"
+          src="https://rive.app/s/ARaH7KxNaEm7eq5qw8y9Wg/embed"
+          allowfullscreen
+        ></iframe>
+      </div>
     </header>
     <section>
-        <div id="alert-modal" class="alert">
-            <div class="alert-contents">
-                <img width="54" height="54" src="https://img.icons8.com/fluency/48/checkmark-blue.png" alt="checkmark-blue"/>
-                <label id="result" class="result-text">Login successful</label>
-                <label id="more-result" class="more-text">You have successful signin into your account!</label>
-            </div>
+      <div id="alert-modal" class="alert">
+        <div class="alert-contents">
+          <img
+            width="54"
+            height="54"
+            src="https://img.icons8.com/fluency/48/checkmark-blue.png"
+            alt="checkmark-blue"
+          />
+          <label id="result" class="result-text">Login successful</label>
+          <label id="more-result" class="more-text"
+            >You have successful signin into your account!</label
+          >
         </div>
-        <div id="alert-modal-register" class="alert">
-            <div class="alert-contents">
-                <img width="54" height="54" src="https://img.icons8.com/fluency/48/checkmark-blue.png" alt="checkmark-blue"/>
-                <label id="result" class="result-text">Register successful</label>
-                <label id="more-result" class="more-text">You have successful register your account!</label>
-            </div>
+      </div>
+      <div id="alert-modal-register" class="alert">
+        <div class="alert-contents">
+          <img
+            width="54"
+            height="54"
+            src="https://img.icons8.com/fluency/48/checkmark-blue.png"
+            alt="checkmark-blue"
+          />
+          <label id="result" class="result-text">Register successful</label>
+          <label id="more-result" class="more-text"
+            >You have successful registered your account!</label
+          >
         </div>
-        <div class="modal" id="modal">
-            <div class="chat-header">
-                <img width="80" height="80" src="https://img.icons8.com/3d-fluency/94/robot-1.png" alt="robot-1"/>
-                <label class="bot-header">Bot Assistant</label>
-                <div class="close" id="close-modal-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256"
-                    style="fill:#000000;">
-                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M7.71875,6.28125l-1.4375,1.4375l17.28125,17.28125l-17.28125,17.28125l1.4375,1.4375l17.28125,-17.28125l17.28125,17.28125l1.4375,-1.4375l-17.28125,-17.28125l17.28125,-17.28125l-1.4375,-1.4375l-17.28125,17.28125z"></path></g></g>
-                    </svg>
-                </div>
-            </div>
+      </div>
+      <div class="modal" id="modal">
+        <div class="chat-header">
+          <img
+            width="80"
+            height="80"
+            src="https://img.icons8.com/3d-fluency/94/robot-1.png"
+            alt="robot-1"
+          />
+          <label class="bot-header">Bot Assistant</label>
+          <div class="close" id="close-modal-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="25"
+              height="25"
+              viewBox="0,0,256,256"
+              style="fill: #000000"
+            >
+              <g
+                fill="#ffffff"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal"
+              >
+                <g transform="scale(5.12,5.12)">
+                  <path
+                    d="M7.71875,6.28125l-1.4375,1.4375l17.28125,17.28125l-17.28125,17.28125l1.4375,1.4375l17.28125,-17.28125l17.28125,17.28125l1.4375,-1.4375l-17.28125,-17.28125l17.28125,-17.28125l-1.4375,-1.4375l-17.28125,17.28125z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
 
-            <div class="chat-body">
-                <div class="message">
-                    <img width="28" height="28" src="https://img.icons8.com/stickers/100/chatbot.png" alt="chatbot"/>
-                    <p class="text-messageRobot">What is your question?</p>
-                </div>
-                <div class="me-message">
-                    <p class="text-message">You are a robot?</p>
-                </div>
-                <div class="message">
-                    <img width="28" height="28" src="https://img.icons8.com/stickers/100/chatbot.png" alt="chatbot"/>
-                    <p class="text-messageRobot">Yes, I am</p>
-                </div>
-                <div class="message">
-                    <img width="28" height="28" src="https://img.icons8.com/stickers/100/chatbot.png" alt="chatbot"/>
-                    <p class="text-messageRobot">one more question?</p>
-                </div>
-            </div>
-            <div class="input">
-                <input type="text" id="textinput" class="text-input" placeholder="Write your question" autofocus />
-                <img width="38" height="38" src="https://img.icons8.com/fluency/48/arrow.png" alt="arrow" class="send-message"/>
-            </div>
+        <div class="chat-body">
+          <div class="message">
+            <img
+              width="28"
+              height="28"
+              src="https://img.icons8.com/stickers/100/chatbot.png"
+              alt="chatbot"
+            />
+            <p class="text-messageRobot">What is your question?</p>
+          </div>
+          <div class="me-message">
+            <p class="text-message">You are a robot?</p>
+          </div>
+          <div class="message">
+            <img
+              width="28"
+              height="28"
+              src="https://img.icons8.com/stickers/100/chatbot.png"
+              alt="chatbot"
+            />
+            <p class="text-messageRobot">Yes, I am</p>
+          </div>
+          <div class="message">
+            <img
+              width="28"
+              height="28"
+              src="https://img.icons8.com/stickers/100/chatbot.png"
+              alt="chatbot"
+            />
+            <p class="text-messageRobot">one more question?</p>
+          </div>
         </div>
-        <div id="login-page" class="login-area">
-            <div class="header-form">
-                <label class="text-normal">Welcome to <a class="title">OpenMinds A.I</a></label>
-                <label class="noaccount">No account? <br><a class="signup" onclick="SignChange()">Sign up</a><br></label>
-            </div>
-            <div class="login-methods">
-                <div class="google-login">
-                    <img width="48" height="48" src="https://img.icons8.com/fluency/48/google-logo.png" alt="google-logo"/>
-                    <label class="signin-Google">Sign in with Google</label>
-                </div>
-                <div class="other-login">
-                    <img width="48" height="48" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/>
-                </div>
-                <div class="other-login"><img width="48" height="48" src="https://img.icons8.com/fluency/48/github.png" alt="github"/></div>
-            </div>
-            <form id="login-form" onsubmit="validateFormLogin()" class="login-form" action="">
-                <label>Enter your email address</label>
-                <div class="email">
-                    <input id="email" style="caret-color: #0099ff;" type="email" required>
-                    <label class="content-input">email address</label>
-                </div>
-                <label>Enter your password</label>
-                <div class="password">
-                    <input id="password" style="caret-color: #0099ff;" type="password" required>
-                    <label class="content-input">Password</label>
-                </div>
-                <div class="forgot-password">
-                    <a class="forgot">Forgot your password?</a>
-                </div>
-                <div class="submit">
-                    <input  type="submit" class="login" type="button" value="Sign In">
-                </div>
-            </form>
+        <div class="input">
+          <input
+            type="text"
+            id="textinput"
+            class="text-input"
+            placeholder="Write your question"
+            autofocus
+          />
+          <img
+            width="38"
+            height="38"
+            src="https://img.icons8.com/fluency/48/arrow.png"
+            alt="arrow"
+            class="send-message"
+          />
         </div>
-        <div id="register-page" class="register-area">
-            <div class="header-form">
-                <label class="text-normal">Welcome to <a class="title">OpenMinds A.I</a></label>
-                <label class="account">You have a account? <br><a class="signup" onclick="SignChange()">Sign in</a><br></label>
-            </div>
-            <div class="register-methods">
-                <div class="google-login">
-                    <img width="48" height="48" src="https://img.icons8.com/fluency/48/google-logo.png" alt="google-logo"/>
-                    <label class="signin-Google">Sign up with Google</label>
-                </div>
-                <div class="other-login">
-                    <img width="48" height="48" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/>
-                </div>
-                <div class="other-login"><img width="48" height="48" src="https://img.icons8.com/fluency/48/github.png" alt="github"/></div>
-            </div>
-            <form id="register-form" onsubmit="validateFormRegister()" class="register-form" action="">
-                <label>Enter your username</label>
-                <div class="username">
-                    <input id="username" type="text" style="caret-color: #0099ff;" required>
-                    <label class="content-input">Username</label>
-                </div>
-                <label>Enter your email address</label>
-                <div class="email">
-                    <input id="email" style="caret-color: #0099ff;" type="email" required>
-                    <label class="content-input">email address</label>
-                </div>
-                <label>Enter your password</label>
-                <div class="password">
-                    <input id="password" style="caret-color: #0099ff;" type="password" required>
-                    <label class="content-input">Password</label>
-                </div>
-                <div class="submit">
-                    <input  type="submit" class="register" type="button" value="Sign Up">
-                </div>
-            </form>
+      </div>
+      <div id="login-page" class="login-area">
+        <div class="header-form">
+          <label class="text-normal"
+            >Welcome to <a class="title">OpenMinds A.I</a></label
+          >
+          <label class="noaccount"
+            >No account? <br /><a class="signup" onclick="SignChange()"
+              >Sign up</a
+            ><br
+          /></label>
         </div>
-        <div class="chat-container" id="chat-area">
-            <div class="container-chat" id="chat-button">
-                <img width="90" height="90" src="https://img.icons8.com/3d-fluency/94/chatbot.png" alt="chatbot"/>
-            </div>
+        <div class="login-methods">
+          <div class="google-login">
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/fluency/48/google-logo.png"
+              alt="google-logo"
+            />
+            <label class="signin-Google">Sign in with Google</label>
+          </div>
+          <div class="other-login">
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/color/48/facebook-new.png"
+              alt="facebook-new"
+            />
+          </div>
+          <div class="other-login">
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/fluency/48/github.png"
+              alt="github"
+            />
+          </div>
         </div>
+        <form
+          id="login-form"
+          onsubmit="validateFormLogin()"
+          class="login-form"
+          action=""
+        >
+          <label>Enter your email address</label>
+          <div class="email">
+            <input
+              id="email"
+              style="caret-color: #0099ff"
+              type="email"
+              required
+            />
+            <label class="content-input">email address</label>
+          </div>
+          <label>Enter your password</label>
+          <div class="password">
+            <input
+              id="password"
+              style="caret-color: #0099ff"
+              type="password"
+              required
+            />
+            <label class="content-input">Password</label>
+          </div>
+          <div class="forgot-password">
+            <a class="forgot">Forgot your password?</a>
+          </div>
+          <div class="submit">
+            <input type="submit" class="login" type="button" value="Sign In" />
+          </div>
+        </form>
+      </div>
+      <div id="register-page" class="register-area">
+        <div class="header-form">
+          <label class="text-normal"
+            >Welcome to <a class="title">OpenMinds A.I</a></label
+          >
+          <label class="account"
+            >You have a account? <br /><a class="signup" onclick="SignChange()"
+              >Sign in</a
+            ><br
+          /></label>
+        </div>
+        <div class="register-methods">
+          <div class="google-login">
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/fluency/48/google-logo.png"
+              alt="google-logo"
+            />
+            <label class="signin-Google">Sign up with Google</label>
+          </div>
+          <div class="other-login">
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/color/48/facebook-new.png"
+              alt="facebook-new"
+            />
+          </div>
+          <div class="other-login">
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/fluency/48/github.png"
+              alt="github"
+            />
+          </div>
+        </div>
+        <form
+          id="register-form"
+          onsubmit="validateFormRegister()"
+          class="register-form"
+          action=""
+        >
+          <label>Enter your username</label>
+          <div class="username">
+            <input
+              id="username"
+              type="text"
+              style="caret-color: #0099ff"
+              required
+            />
+            <label class="content-input">Username</label>
+          </div>
+          <label>Enter your email address</label>
+          <div class="email">
+            <input
+              id="email"
+              style="caret-color: #0099ff"
+              type="email"
+              required
+            />
+            <label class="content-input">email address</label>
+          </div>
+          <label>Enter your password</label>
+          <div class="password">
+            <input
+              id="password"
+              style="caret-color: #0099ff"
+              type="password"
+              required
+            />
+            <label class="content-input">Password</label>
+          </div>
+          <div class="submit">
+            <input
+              type="submit"
+              class="register"
+              type="button"
+              value="Sign Up"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="chat-container" id="chat-area">
+        <div class="container-chat" id="chat-button">
+          <img
+            width="90"
+            height="90"
+            src="https://img.icons8.com/3d-fluency/94/chatbot.png"
+            alt="chatbot"
+          />
+        </div>
+      </div>
     </section>
     <footer>
-        <div class="waves">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path class="wave-2" fill="#0099ff" fill-opacity="1" d="M0,160L48,138.7C96,117,192,75,288,53.3C384,32,480,32,576,48C672,64,768,96,864,128C960,160,1056,192,1152,224C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-                <path class="wave-1" fill="#33658A" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,154.7C384,149,480,107,576,112C672,117,768,171,864,181.3C960,192,1056,160,1152,154.7C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-            </svg>
-        </div>
+      <div class="waves">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            class="wave-2"
+            fill="#0099ff"
+            fill-opacity="1"
+            d="M0,160L48,138.7C96,117,192,75,288,53.3C384,32,480,32,576,48C672,64,768,96,864,128C960,160,1056,192,1152,224C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+          <path
+            class="wave-1"
+            fill="#33658A"
+            fill-opacity="1"
+            d="M0,96L48,112C96,128,192,160,288,154.7C384,149,480,107,576,112C672,117,768,171,864,181.3C960,192,1056,160,1152,154.7C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
     </footer>
     <script src="./js/modal.js"></script>
     <script src="./js/form.js"></script>
     <script src="./js/sign.js"></script>
-</body> 
+  </body>
 </html>

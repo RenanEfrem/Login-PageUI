@@ -1,166 +1,164 @@
 :root {
-    --background-light: #e7eded;
-    --white: #ffffff;
-    --ice: #b8d4ff;
-    --dark-blue: #037fd8;
-    --black: black;
-    --blue: #0099ff;
-    --aqua-blue: #4bb3f8;
-    --red: #a51c30;
-  }
+  --background-light: #e7eded;
+  --white: #ffffff;
+  --ice: #b8d4ff;
+  --dark-blue: #037fd8;
+  --black: black;
+  --blue: #0099ff;
+  --aqua-blue: #4bb3f8;
+  --red: #a51c30;
+}
 
 @media only screen and (max-width: 1200px) {
-    .login-form {
-      margin-top: 20vh;
-    }
-    .register-form {
-      margin-top: 20vh;
-    }
-    .waves {
-      display: none;
-    }
-    iframe {
-      display: none;
-    }
-    .ia {
-      display: none;
-    }
-    .login-area {
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 50%;
-    }
-    .register-area {
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 50%;
-    }
-    .login {
-      font-size: 14px;
-      width: 250px;
-      height: 80px;
-    }
-    .register {
-      font-size: 14px;
-      width: 250px;
-      height: 80px;
-    }
-    .forgot {
-      font-size: 12px;
-    }
-    label {
-      font-size: 13px;
-    }
-    .text-normal {
-      font-size: 14px;
-    }
-    .signin {
-      font-size: 12px;
-    }
-    .account {
-      font-size: 11px;
-    }
-    .noaccount {
-      font-size: 11px;
-    }
-    .google-login {
-      border-radius: 10px;
-      height: 50px;
-      width: 60px;
-      background-color: var(--background-light);
-    }
-    .signin-Google {
-      display: none;
-    }
-    .modal {
-      height: 550px;
-      width: 350px;
-    }
+  .login-form {
+    margin-top: 20vh;
   }
-  @media only screen and (max-width: 896px) {
-    .login-area {
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 85%;
-    }
-    .register-area {
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 85%;
-    }
-    .login-form {
-      margin-top: 20vh;
-    }
-    .register-form {
-      margin-top: 20vh;
-    }
-    .waves {
-      display: none;
-    }
-    .robot {
-      height: 50px;
-      width: 50px;
-    }
-    .container-chat {
-      margin-bottom: 10px;
-      margin-right: 5px;
-    }
-    .alert {
-      width: 60vw;
-    }
-    .result-text {
-      font-size: 3vw;
-    }
-    .more-text {
-      font-size: 2vw;
-    }
+  .register-form {
+    margin-top: 20vh;
   }
-  @media only screen and (max-width: 740px) {
-    .login-area {
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      height: 80%;
-      width: 90%;
-    }
-    .register-area {
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      height: 80%;
-      width: 90%;
-    }
-    .register-form {
-      margin-top: 20vh;
-    }
-    .waves {
-      display: none;
-    }
-    .modal {
-      height: 450px;
-      width: 300px;
-    }
-    .alert {
-      width: 75vw;
-    }
-    .result-text {
-      font-size: 5vw;
-    }
-    .more-text {
-      font-size: 3vw;
-    }
+  .waves {
+    display: none;
   }
-  @media only screen and (max-width: 374) {
-    .login-form {
-      margin-top: 20vh;
-    }
-    .register-form {
-      margin-top: 20vh;
-    }
+  iframe {
+    display: none;
   }
-  
-  
+  .ia {
+    display: none;
+  }
+  .login-area {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+  }
+  .register-area {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+  }
+  .login {
+    font-size: 14px;
+    width: 250px;
+    height: 80px;
+  }
+  .register {
+    font-size: 14px;
+    width: 250px;
+    height: 80px;
+  }
+  .forgot {
+    font-size: 12px;
+  }
+  label {
+    font-size: 13px;
+  }
+  .text-normal {
+    font-size: 14px;
+  }
+  .signin {
+    font-size: 12px;
+  }
+  .account {
+    font-size: 11px;
+  }
+  .noaccount {
+    font-size: 11px;
+  }
+  .google-login {
+    border-radius: 10px;
+    height: 50px;
+    width: 60px;
+    background-color: var(--background-light);
+  }
+  .signin-Google {
+    display: none;
+  }
+  .modal {
+    height: 550px;
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 896px) {
+  .login-area {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+  }
+  .register-area {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+  }
+  .login-form {
+    margin-top: 20vh;
+  }
+  .register-form {
+    margin-top: 20vh;
+  }
+  .waves {
+    display: none;
+  }
+  .robot {
+    height: 50px;
+    width: 50px;
+  }
+  .container-chat {
+    margin-bottom: 10px;
+    margin-right: 5px;
+  }
+  .alert {
+    width: 60vw;
+  }
+  .result-text {
+    font-size: 3vw;
+  }
+  .more-text {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .login-area {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    width: 90%;
+  }
+  .register-area {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    width: 90%;
+  }
+  .register-form {
+    margin-top: 20vh;
+  }
+  .waves {
+    display: none;
+  }
+  .modal {
+    height: 450px;
+    width: 300px;
+  }
+  .alert {
+    width: 75vw;
+  }
+  .result-text {
+    font-size: 5vw;
+  }
+  .more-text {
+    font-size: 3vw;
+  }
+}
+@media only screen and (max-width: 374) {
+  .login-form {
+    margin-top: 20vh;
+  }
+  .register-form {
+    margin-top: 20vh;
+  }
+}
