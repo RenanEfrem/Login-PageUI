@@ -418,7 +418,7 @@ input[type="email"]:invalid {
   height: 35px;
   border-radius: 5px;
   background-color: var(--background-light);
-  border-bottom: 1px solid var(--blue);
+  border: 1px solid var(--blue);
   display: flex;
   flex-direction: row;
   align-items: center;
