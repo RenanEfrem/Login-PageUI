@@ -1,7 +1,13 @@
 # Login Page - UI
 
 Projeto Front-end de uma pagina de Login
-![Live](https://renanefrem.github.io/Login-PageUI/)
+
+<p align="center">
+  <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+</p>
+<p align="center">
+  <p href="https://renanefrem.github.io/Login-PageUI/">vizualizar Projeto</p>
+</p>
 
 ## Screenshots
 
@@ -12,11 +18,6 @@ Projeto Front-end de uma pagina de Login
 
 - [@RenanEfrem](https://www.github.com/renanefrem)
 
-## Color 
-
-| Cor               | Hexadecimal                                                |
-| ----------------- | ---------------------------------------------------------------- |
-| Cor Principal       | ![#0099ff](https://via.placeholder.com/10/0099ff?text=+) #0099ff |
 
 
 
