@@ -83,6 +83,15 @@
       margin-bottom: 10px;
       margin-right: 5px;
     }
+    .alert {
+      width: 60vw;
+    }
+    .result-text {
+      font-size: 3vw;
+    }
+    .more-text {
+      font-size: 2vw;
+    }
   }
   @media only screen and (max-width: 740px) {
     .login-area {
@@ -101,6 +110,15 @@
     .modal {
       height: 450px;
       width: 300px;
+    }
+    .alert {
+      width: 75vw;
+    }
+    .result-text {
+      font-size: 5vw;
+    }
+    .more-text {
+      font-size: 3vw;
     }
   }
   @media only screen and (max-width: 374) {

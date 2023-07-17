@@ -14,6 +14,13 @@
         </div>
     </header>
     <section>
+        <div id="alert-modal" class="alert">
+            <div class="alert-contents">
+                <img width="54" height="54" src="https://img.icons8.com/fluency/48/checkmark-blue.png" alt="checkmark-blue"/>
+                <label id="result" class="result-text">Login successful</label>
+                <label id="more-result" class="more-text">You have successful signin into your account</label>
+            </div>
+        </div>
         <div class="modal" id="modal">
             <div class="chat-header">
                 <img width="80" height="80" src="https://img.icons8.com/3d-fluency/94/robot-1.png" alt="robot-1"/>
@@ -63,22 +70,22 @@
                 </div>
                 <div class="other-login"><img width="48" height="48" src="https://img.icons8.com/fluency/48/github.png" alt="github"/></div>
             </div>
-            <form class="login-form" action="">
+            <form id="login-form" onsubmit="validateForm()" oninvalid="InvalidForm()" class="login-form" action="">
                 <label>Enter your email address</label>
                 <div class="email">
-                    <input style="caret-color: #0099ff;" type="email" required>
+                    <input id="email" style="caret-color: #0099ff;" type="email" required>
                     <label class="content-input">email address</label>
                 </div>
                 <label>Enter your password</label>
                 <div class="password">
-                    <input style="caret-color: #0099ff;" type="password" required>
+                    <input id="password" style="caret-color: #0099ff;" type="password" required>
                     <label class="content-input">Password</label>
                 </div>
                 <div class="forgot-password">
                     <a class="forgot">Forgot your password?</a>
                 </div>
                 <div class="submit">
-                    <input type="submit" class="login" type="button" value="Sign In">
+                    <input  type="submit" class="login" type="button" value="Sign In">
                 </div>
             </form>
         </div>
@@ -97,5 +104,6 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/form.js"></script>
 </body> 
 </html>

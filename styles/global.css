@@ -374,6 +374,42 @@ input[type="email"]:invalid {
   width: 90px;
   height: 90px;
 }
+.alert {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 30vw;
+  height: 20vh;
+  overflow: hidden;
+  left: 50%;
+  transform: translate(-50%);
+  top: 2%;
+  z-index: 1;
+  background-color: var(--white);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 0.1px solid var(--dark-blue);
+  -webkit-box-shadow: 10px 10px 17px -4px rgba(0,0,0,0.42);
+  -moz-box-shadow: 10px 10px 17px -4px rgba(0,0,0,0.42);
+  box-shadow: 10px 10px 17px -4px rgba(0,0,0,0.42);
+  padding: 10px;
+  transition: visibility 0.4s linear, opacity 0.4s linear;
+}
+
+.alert-contents {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.result-text {
+  font-size: 2vw;
+  font-weight: 500;
+  color: var(--blue);
+}
 
 /* ANIMAÇÕES */
 @keyframes chatbot-animation {
@@ -386,5 +422,4 @@ input[type="email"]:invalid {
       transform: translateX(-200px);
     }
   }
-/* RESPONSIVIDADE */
 
