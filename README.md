@@ -5,9 +5,8 @@ Projeto Front-end de uma pagina de Login
 <p align="center">
   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
-<p align="center">
-  <p href="https://renanefrem.github.io/Login-PageUI/">vizualizar Projeto</p>
-</p>
+
+[Visualizar Projeto](https://renanefrem.github.io/Login-PageUI/)
 
 ## Screenshots
 
